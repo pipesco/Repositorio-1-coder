@@ -6,12 +6,23 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    grid-column: 1/4;
+    
 }
 .lista_barra_item{
     display: inline-block;
-    margin: 3px;
+    margin: 3px 3px 3px 3px;
     border: solid 1px black;
     padding: 2px 2px 2px 2px;
+    transition: all 1s;
+}
+.lista_barra_item:hover{
+    transform: scale(1.25);
+    background-image: linear-gradient(rgb(122, 63, 73), rgb(119, 27, 27)) ;
+    ;
+}
+.item_text:hover{
+    color: white;
 }
 .logo {
     width: 650px;
@@ -24,7 +35,7 @@
 
 .miniatura{
     width: 100px;
-    height 100px;
+    height: 100px;
     display: flex;
     align-items: flex-start;
     justify-content: flex-start;  
@@ -81,9 +92,12 @@ a {
 
 .fotitos{
  
-    display:flex;
-    
-    justify-content: center;
+    display:grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1fr 1fr;
+    margin: auto;
+    margin-left: 40px;
+   
 }
 .foto1{
     margin: 15px 15px 15px 15px;
@@ -91,12 +105,14 @@ a {
 }
 .foto2{
     margin: 15px 15px 15px 15px;
-
-
 }
 .foto3{
     margin: 15px 15px 15px 15px;
-   
+
+}
+.foto10{
+    grid-column:2/3 ;
+  
 }
 .links{
     display: flex;
@@ -169,8 +185,6 @@ background-color: rgb(134, 59, 59);
     font-family:'Times New Roman', Times, serif;
     text-decoration: underline;
     margin: 10px 10px 10px 10px;
-
-
 }
 .resp{
     font-family:'Times New Roman', Times, serif;
@@ -182,4 +196,22 @@ background-color: rgb(134, 59, 59);
 .form{
 
     margin-bottom: 25px;
+}
+.main{
+    display: grid;
+    grid-template-columns: 1fr ;
+    grid-template-rows: 1fr 5fr;
+}
+
+@media screen { min-width: 600px;
+    .logo{
+        width: 200px;
+        height: 100px;
+        margin:auto;
+        display: block;
+    }
+    .lista_barra .titulo .subtitulo{
+        margin: justify;
+    }
+
 }
