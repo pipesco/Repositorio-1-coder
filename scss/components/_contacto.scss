@@ -1,0 +1,12 @@
+.titulo{
+    background-color: $color-principal;
+    font-family: $font-principal;
+}
+.footer{
+    background-color: $color-principal;
+        .links{
+            display: flex;
+            justify-content: center;
+            list-style: none;
+        }
+}

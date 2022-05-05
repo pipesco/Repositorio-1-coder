@@ -255,6 +255,10 @@ background-color: rgb(134, 59, 59);
  }
  .lista_barra_item{
      flex-wrap: wrap;
+
+ }
+ .carousel{
+     display: none;
  }
 }
 .carousel{
@@ -262,5 +266,10 @@ background-color: rgb(134, 59, 59);
     height: 900px;
     margin: auto;
 }
-
+.barrax{
+    display: grid;
+    grid-template-columns: 1fr ;
+    grid-template-rows: 1fr 5fr;
+    height: 100px;
+}
 
