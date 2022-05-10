@@ -13,13 +13,12 @@
     
 }
 .footer{
+    @include flexbox(flex-start, center);
     background-color: $color-principal;
-        .links{
-            display: flex;
-            justify-content: center;
-            list-style: none;
-        }
+    .links{
+        display: flex;
+        justify-content: center;
+        list-style: none;
     }
-    @include flexbox(flex-start, center)
-};
+}
 
