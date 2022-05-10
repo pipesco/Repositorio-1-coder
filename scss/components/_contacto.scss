@@ -1,6 +1,16 @@
 .titulo{
     background-color: $color-principal;
     font-family: $font-principal;
+    @extend %flex-center ;
+}
+.minitit{
+    font-size: map-get($tamanio-tipografia , subtitulo );
+    font-family: $font-principal;
+
+    .resp{
+        font-size: map-get($tamanio-tipograf ,parrafo );
+    }
+    
 }
 .footer{
     background-color: $color-principal;
@@ -9,4 +19,7 @@
             justify-content: center;
             list-style: none;
         }
-}
+    }
+    @include flexbox(flex-start, center)
+};
+

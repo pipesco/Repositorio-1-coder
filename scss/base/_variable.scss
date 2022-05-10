@@ -1,2 +1,18 @@
 $color-principal: rgb(134, 59, 59);
 $font-principal: 'Times New Roman', Times, serif;
+$tamanio-tipografia:(
+    titulos: 24px,
+    subtitulo: 19px,
+    parrafo: 14px
+)
+%flex-center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+};
+
+@mixin flexbox ($justify, $align){
+    display: flex;
+    align-items: $justify ;
+    justify-content: $align ;
+};
