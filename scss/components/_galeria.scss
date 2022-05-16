@@ -1,0 +1,43 @@
+.carousel{
+    width: 900px;
+    height: 900px;
+    margin: auto;
+}
+@media only screen and (max-width: 600px){
+    .logo{
+        height: 300px;
+        width: 300px;
+    }
+    .subtitulo{
+        text-align: center;
+        justify-content: center;
+    }
+    .titulo{
+       text-align: center;
+       justify-content: center;   
+    }
+    .miniatura{
+        display: flex;
+        justify-content: left;
+    }
+    .fotitos{
+        display: grid;
+        grid-template-columns: 1fr ;
+    }
+    .lista_barra_item{
+        flex-wrap: wrap;
+   
+    }
+    .carousel{
+        display: none;
+    }
+   }
+   .familia{
+    display: block;
+    margin: auto;
+    object-fit: cover;
+    border: solid 10px rgb(99, 28, 28);
+    margin-top: 25px;
+    margin-bottom: 25px;
+      
+  }

@@ -4,7 +4,7 @@ $tamanio-tipografia:(
     titulos: 24px,
     subtitulo: 19px,
     parrafo: 14px
-)
+);
 %flex-center{
     display: flex;
     justify-content: center;
@@ -16,3 +16,5 @@ $tamanio-tipografia:(
     align-items: $justify ;
     justify-content: $align ;
 };
+
+$tamania-total: 100%;

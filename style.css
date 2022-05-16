@@ -15,11 +15,13 @@
     border: solid 1px black;
     padding: 2px 2px 2px 2px;
     transition: all 1s;
+    color: rgb(134, 59, 59) ;
+    text-decoration: none;
 }
 .lista_barra_item:hover{
     transform: scale(1.25);
     background-image: linear-gradient(rgb(122, 63, 73), rgb(119, 27, 27)) ;
-    ;
+    
 }
 .item_text:hover{
     color: white;
@@ -99,8 +101,6 @@ padding: 2px 1px 1px 1px;
 margin: 2px 1px 1px 1px;
 font-weight: 600;
 color: rgb(99, 28, 28);
-
-
 }
 a {
     text-decoration: none;
@@ -147,11 +147,13 @@ a {
     display: flex;
     justify-content: center;
     list-style: none;
+    color: rgb(134, 59, 59);
     
     
 }
 .face{
     padding-right: 25px;
+    color: rgb(134, 59, 59);
     
 }
 .footer{
@@ -167,16 +169,16 @@ a {
 }
 .subtituloQ{
     font-family: 'Times New Roman', Times, serif;
-display:flex;
-margin: auto;
-justify-content: center;
-text-align: center;
-font-size: 25px;
-padding: 2px 1px 1px 1px;
-font-weight: 300;
-color: white;
-width: 1300px;
-background-color: rgb(134, 59, 59);
+    display:flex;
+    margin: auto;
+    justify-content: center;
+    text-align: center;
+    font-size: 25px;
+    padding: 2px 1px 1px 1px;
+    font-weight: 300;
+    color: white;
+    width: 1300px;
+    background-color: rgb(134, 59, 59);
 }
 
 .familia{
@@ -272,4 +274,11 @@ background-color: rgb(134, 59, 59);
     grid-template-rows: 1fr 5fr;
     height: 100px;
 }
-
+.fa-brands{
+    color:rgb(119, 27, 27) ;
+}
+.fa-brands:hover{
+    transform: scale(1.25);
+    color: rgba(0, 0, 255, 0.527);
+    ;
+}

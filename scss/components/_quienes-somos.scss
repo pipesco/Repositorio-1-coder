@@ -1,0 +1,20 @@
+.subtituloQ{
+    font-family: $font-principal;
+   
+    margin: auto;
+    font-size: 25px;
+    padding: 2px 1px 1px 1px;
+    font-weight: 300;
+    color: white;
+    width: 1300px;
+    background-color: $color-principal;
+}
+.familia{
+    display: block;
+    margin: auto;
+    object-fit: cover;
+    border: solid 10px rgb(99, 28, 28);
+    margin-top: 25px;
+    margin-bottom: 25px;
+      
+  }
