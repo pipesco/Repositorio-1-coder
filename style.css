@@ -28,14 +28,15 @@
 }
 .container {
    position: relative;
+   width: 100%;
   }
 .logo {
-    width: 650px;
+    width: 550px;
     height: 300px;
     display: block;
     margin: auto;
     object-fit: cover;
-    padding: 50px 50px 50px 50px;
+    padding: 50px 0px 50px 0px;
 }
 
 .overlay {
@@ -45,7 +46,7 @@
     left: 0;
     right: 0;
     height: 100%;
-    width: 100%;
+    width: auto;
     opacity: 0;
     transition: .5s ease;
     background-color: rgb(134, 59, 59);
@@ -68,16 +69,15 @@
 }
 .section{
     height: 500px;
+    margin-top: 50px;
+    margin-bottom: 50px;
 }
 .contenedor{
     background-color: rgb(134, 59, 59);
-    width: 600px;
+    width: auto;
     height: 400px;
-    margin-bottom: 100px;
-    display: block;
     margin: auto;
-    margin-bottom: 100px;
-    margin-top: 100px;
+    margin-top: 50px;
 }
 .testimonio{
     font-size: 20px;
@@ -93,10 +93,11 @@
     display: block;
     margin: auto;
     object-fit: cover;
-    width: 400px;
+    width: auto;
     height: 200px;
     border: solid white ;
     margin-top: 3px;
+    position: relative;
 }
   
 .miniatura{
@@ -161,7 +162,6 @@ a {
     display:grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: 1fr 1fr;
-    margin: auto;
 }
 .foto_1{
     margin: 15px 15px 15px 15px;
@@ -171,6 +171,7 @@ a {
     width: 310px;
   
 }
+
 
 
 .links{
@@ -213,10 +214,10 @@ a {
 .familia{
   display: block;
   margin: auto;
-  object-fit: cover;
   border: solid 10px rgb(99, 28, 28);
   margin-top: 25px;
   margin-bottom: 25px;
+  width: 550px;;
     
 }
 
@@ -234,6 +235,7 @@ a {
     font-size: 30px;
     font-family:'Times New Roman', Times, serif;
     text-decoration: underline;
+    text-align: center;
 
 }
 .resp{
@@ -242,6 +244,7 @@ a {
     margin: 10px 10px 10px 100px;
 
 }
+
 .form{
     margin-left: 100px;
 }
@@ -256,6 +259,7 @@ a {
     display: grid;
     grid-template-columns: 1fr ;
     grid-template-rows: 1fr 5fr;
+    width: auto;
 }
 .carousel{
     width: 500px;
@@ -271,13 +275,22 @@ a {
     width: 500px;
     height: 490px;
 }
-
+@media only screen and (max-width: 1050px){
+    .fotitos{
+        display:grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: 1fr 1fr;
+    }
+}
 
 @media only screen and (max-width: 600px){
  .titulo{
-     flex-wrap: wrap;
-     font-size: 50px; 
+     flex-wrap:nowrap;
+     font-size:200%; 
  }   
+ .cabecera{
+     width: 100%;
+ }
  .logo{
      height: 400px;
      width: 500px;
@@ -287,22 +300,48 @@ a {
      justify-content: center;
      flex-wrap: wrap;
  }
+ .section{
+     margin-bottom: 50px;
+     height: 300px;
+ }
+.testimonio{
+    font-size: small;
+}
+ .roman{
+     display: none;
+ }
+ .overlay{
+     display: none;
+ }
+ .container{
+     height: 400px;
+ }
+ .logo{
+     width: 100%;
+ }
  .subtitulo2{
     text-align: center;
     justify-content: center;
     flex-wrap: wrap;
-    width: 450px;
+    width: auto;
     font-size: small;
  }
  .familia{
      height: 200px;
-     width: 400px;
+     width:100%;
+     border: none;
  }
 
  .miniatura{
-     display: flex;
-     justify-content: left;
+     display: none;
 
+ }
+ .tabla{
+     width: fit-content;
+     overflow: scroll;
+ }
+ .contenedor{
+     height: 300px;
  }
  .fotitos{
      display: grid;
@@ -310,22 +349,73 @@ a {
  }
  .lista_barra_item{
      flex-wrap: wrap;
-
  }
- 
  .mapa{
      width: 500px;
      height: 400px;
  }
- .comentario{
-     width: 400px;
- }
  .carousel{
      display: none;
+ }
+ .tablax{
+    width: auto;
+    overflow: scroll;
  }
  .tabla{
      width: 300px;
  }
+.fotitos{
+    width: auto;
+}
+.foto1{
+    width: auto;
+}
+.foto_1{
+    width: 100%;
+    margin-right: 0px;
+    margin-left: 0px;
+    border: none;
+}
+.resp{
+    margin: 0px;
+}
+.minitit{
+text-align: left;
+}
+.mapa{
+    width: auto;
+    overflow: scroll;
+}
+.form{
+    margin-left: 10px;
+    margin-bottom: 10px;
+}
+.texto{
+    width: 100px;
+}
+.comentario{
+    width: 200px;
+}
+ .footer{
+     width: 100%;
+ }
+ .links{
+     width: fit-content;
+ }
+}
+@media only screen and (max-width: 340px){
+    .mapa{
+        display: none;
+    }
+    .minitit{
+        font-size: small;
+    }
+    .resp{
+        font-size: small;
+    }
+    .comentario{
+        width: 150px;
+    }
 }
 .fa-brands{
     color:rgb(119, 27, 27) ;
@@ -349,3 +439,4 @@ a {
     font-weight: 400px;
     flex-wrap: wrap;
 }
+
